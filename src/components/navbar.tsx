@@ -24,7 +24,7 @@ export default function Navbar({ navHeight }: { navHeight: number }) {
                 </Grid>
                 <Grid size={2} sx={{ textAlign: "right" }}>
                     <Typography>
-                        Welcome to Mars
+                        Bienvenidos a Marte
                     </Typography>
                 </Grid>
 
