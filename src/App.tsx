@@ -1,5 +1,3 @@
-// import reactLogo from './assets/react.svg'
-
 import { Box } from "@mui/material"
 import { BoxImages, Navbar } from "./components"
 

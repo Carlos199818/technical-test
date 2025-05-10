@@ -1,5 +1,4 @@
 import { Box, Button, Grid, Typography } from "@mui/material";
-import axios from "axios";
 import { useEffect, useState } from "react";
 import type { RoverPhoto } from "../interfaces/RoverPhotoInterface";
 import axiosInstance from "../api/client";
