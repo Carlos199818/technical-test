@@ -1,13 +1,13 @@
 import { AppBar, Grid, Typography } from "@mui/material"
 
 
-export default function Navbar() {
+export default function Navbar({ navHeight }: { navHeight: number }) {
 
     return (
         <AppBar
             sx={{
                 backgroundColor: "#2b2b2b",
-                height: "240px",
+                height: `${navHeight}px`,
             }}
         >
             <Grid container sx={{ p: 5 }}>

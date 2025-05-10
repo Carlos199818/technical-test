@@ -1,27 +1,30 @@
 // import reactLogo from './assets/react.svg'
 
-import { Box, Typography } from "@mui/material"
-import { Navbar } from "./components"
+import { Box, Grid, Typography } from "@mui/material"
+import { BoxImages, Navbar } from "./components"
 
 function App() {
 
+  const navHeight = 240;
+
   return (
     <Box sx={{
-      display: "block",
+      display: "flex",
+      height: "100vh",
+
     }}>
-      
+
       <Box>
-        <Navbar />
+        <Navbar navHeight={navHeight} />
       </Box>
 
       <Box
         sx={{
-          height: "100vh",
-          display: "flex",
-          alignItems: "center",
+          width: "100%",
+          mt: `${navHeight}px`,
         }}
       >
-        <Typography>Holaaaaaaaaaaaaa</Typography>
+        <BoxImages />
       </Box>
     </Box>
   )

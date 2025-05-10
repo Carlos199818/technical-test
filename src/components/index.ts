@@ -1,4 +1,4 @@
 
 
-
-export { default as Navbar } from "./navbar"
+export { default as Navbar } from "./Navbar"
+export { default as BoxImages } from "./BoxImages"
