@@ -1,24 +1,29 @@
 // import reactLogo from './assets/react.svg'
 
-import { AppBar, Typography } from "@mui/material"
+import { Box, Typography } from "@mui/material"
+import { Navbar } from "./components"
 
 function App() {
 
   return (
-    <AppBar
-      sx={{
-        backgroundColor: "#2b2b2b",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "240px",
-      }}
-    >
-      <Typography>
-        Welcome to Mars
-      </Typography>
+    <Box sx={{
+      display: "block",
+    }}>
+      
+      <Box>
+        <Navbar />
+      </Box>
 
-    </AppBar>
+      <Box
+        sx={{
+          height: "100vh",
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
+        <Typography>Holaaaaaaaaaaaaa</Typography>
+      </Box>
+    </Box>
   )
 }
 
