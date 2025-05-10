@@ -2,6 +2,8 @@ import { Box, Button, Grid, Typography } from "@mui/material";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import type { RoverPhoto } from "../interfaces/RoverPhotoInterface";
+import axiosInstance from "../api/client";
+import ImageItem from "./ImageItem";
 
 export default function BoxImages() {
     const itemsPerPage: number = 12;
@@ -18,7 +20,7 @@ export default function BoxImages() {
     };
 
     useEffect(() => {
-        axios.get("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=DEMO_KEY")
+        axiosInstance("/photos?sol=1000&api_key=DEMO_KEY")
             .then((response) => {
                 setData(response.data.photos);
             })
@@ -33,51 +35,11 @@ export default function BoxImages() {
 
             {
                 data.slice(0, visibleCount).map((item: RoverPhoto) => (
-                    <Grid size={4} key={item.id}>
-                        <Box
-                            sx={{
-                                width: "100%",
-                                height: "480px",
-                                backgroundColor: "#2b2b2b",
-                            }}>
-                            <Box sx={{
-                                height: "10%",
-                            }}>
-                                <Typography variant="h6" sx={{
-                                    color: "#fff",
-                                    textAlign: "center",
-                                    fontWeight: "bold",
-                                    paddingTop: "10px",
-                                }}>
-                                    {item.camera.full_name}
-                                </Typography>
-                            </Box>
-                            <img
-                                src={item.img_src}
-                                alt="Mars"
-                                style={{
-                                    width: "100%",
-                                    height: "80%",
-                                    objectFit: "cover",
-                                    borderRadius: "10px",
-                                }}
-                            />
-                            <Box sx={{
-                                height: "10%",
-                            }}>
-                                <Button onClick={() => handleDelete(item)} sx={{
-                                    backgroundColor: "#2b2b2b",
-                                    color: "#f00",
-                                    "&:hover": {
-                                        backgroundColor: "#000000",
-                                    },
-                                }}>
-                                    Eliminar
-                                </Button>
-                            </Box>
-                        </Box>
-
-                    </Grid>
+                    <ImageItem
+                        key={item.id}
+                        item={item}
+                        onDelete={handleDelete} 
+                    />
                 ))
             }
 
@@ -87,7 +49,6 @@ export default function BoxImages() {
                     sx={{
                         width: "100%",
                         height: "70px",
-                        // backgroundColor: "#2b2b2b",
                         display: "flex",
                         justifyContent: "center",
                     }}>
