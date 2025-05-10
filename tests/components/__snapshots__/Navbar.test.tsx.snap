@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <Navbar /> Debe hacer match con el snapshot 1`] = `
+<div>
+  <header
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-1rp7yau-MuiPaper-root-MuiAppBar-root"
+    style="--Paper-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row css-6r5ftf-MuiGrid-root"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-2 css-15bfe7d-MuiGrid-root"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+        >
+          Bienvenidos a Marte
+        </p>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-8 css-17c5yw0-MuiGrid-root"
+      >
+        <h4
+          class="MuiTypography-root MuiTypography-h4 css-f84ov1-MuiTypography-root"
+        >
+          Ven y disfruta de la experiencia de conocer el planeta rojo desde la comodidad de tu hogar
+        </h4>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-2 css-jxgdt2-MuiGrid-root"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+        >
+          Bienvenidos a Marte
+        </p>
+      </div>
+    </div>
+  </header>
+</div>
+`;

@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <BoxImages /> Debe hacer match con el snapshot 1`] = `
+<div>
+  <div
+    class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-5 css-1g5gtdm-MuiGrid-root"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-12 css-yqiqnf-MuiGrid-root"
+    >
+      <div
+        class="MuiBox-root css-6v0m12"
+      >
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-1629p8p-MuiButtonBase-root-MuiButton-root"
+          tabindex="0"
+          type="button"
+        >
+          <h6
+            class="MuiTypography-root MuiTypography-h6 css-1miy0lu-MuiTypography-root"
+          >
+            Más imágenes
+          </h6>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
